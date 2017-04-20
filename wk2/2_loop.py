@@ -19,16 +19,13 @@ i 31
 c 12
 
 """
-
-
 # ZIP: Combine two lists whose length is EQUAL
 # Goal: I need to loop over multiple iterables
 #Prob: How can I get the index in scope (of current iteration)??
 
 
 # COMMENT
-#
-#
+
 def display_indexes(a):
     for index, item in enumerate(a):
         print(item, index)
