@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/michaelevan/temp/pdx_code/codex/wk6/tensorflow/best_model"
+all_model_checkpoint_paths: "/Users/michaelevan/temp/pdx_code/codex/wk6/tensorflow/best_model"

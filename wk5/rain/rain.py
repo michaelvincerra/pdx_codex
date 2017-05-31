@@ -13,11 +13,11 @@ RAIN_DIR = '/Users/michaelevan/temp/pdx_code/PythonFullStack/1_Python/3_Applied_
 def file_handler(filesystem_path: str) -> str:   # context manager; input a str and output a str
     """
     Accepts a filesystem  Path
-    Opens the FIle, and returns the entire file
+    Opens the File, and returns the entire file
     contents as a single string  literal.
     """
 
-    with open(filesystem_path, 'r' ) as f:   # f is a file object
+    with open(filesystem_path, 'r') as f:   # f is a file object
         raw_text = f.read()    # returns the entire content of file as a string.
         return raw_text
 
@@ -29,17 +29,17 @@ def split_strip(raw_data: str) -> list:  # Helper function
 
 
 def processor():
-    # text = list(os.listdir(RAIN_DIR))    # User Menu for multiple datasheets.
+    # text = list(os.listdir(RAIN_DIR))                 # User Menu for multiple datasheets.
 
-    full_path = os.path.join(RAIN_DIR, 'sample.rain')
+    full_path = os.path.join(RAIN_DIR, 'sample.rain')   # learn the os. commands.
 
-    rain_data = file_handler(full_path)
+    rain_data = file_handler(full_path)                 # Accepts params from file_handler above to open file contents
 
-    stripped_data = split_strip(rain_data)
+    stripped_data = split_strip(rain_data)              # Accepts params from split_strip above
 
-    stripped = [data for data in stripped_data if data != '']
+    stripped = [data for data in stripped_data if data != '']   # Listcomp to remove the empty [] in list
 
-    lines = [data.split() for data in stripped]
+    lines = [data.split() for data in stripped]                 # Est. lines only for stripped data
 
     # data_dict = [RainDay(date=rain_day[0], total=rain_day[1], hours=rain_day[2:]) for rain_day in lines]   # THIS USES THE CLASS METHOD
 

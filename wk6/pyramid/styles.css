@@ -1,0 +1,79 @@
+/* Another way to solve this is to use following:
+/*header*/
+
+/*main*/
+
+/*footer*/
+
+
+.box {
+
+    border: 1px solid black;
+}
+
+#container1 {
+
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+#container2 {
+
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+     /*flex-grow: 1 ;*/
+}
+
+
+#container3 {
+
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    /*flex-grow: 1 ;     /*flex-grow: 3 ;* You can use these two together./
+
+
+}
+.all_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /*position: absolute;*/
+    max-width: 100%
+}
+
+
+
+.item{
+  width: 150px;
+  height: 150px;
+  background-color: whitesmoke;
+  margin: 3px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+#outline1 {
+    width: 100%
+}
+
+#outline2 {
+    width: 80%
+}
+
+#outline3 {
+    width: 20%
+}
+
+/* Order of Influence:
+ID, Class, Tag
+*/

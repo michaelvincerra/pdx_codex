@@ -6,10 +6,9 @@ It will take in candidates names from a series of users, until someone types 'do
 Then calculate the vote counts for each candidate and print them out.
 
 ## Advanced
-
 * Calculate who won and print their name out.
-
 """
+
 YES_CHOICES = ('Y', 'y', 'Yes', 'yes')
 NO_CHOICES = ('N', 'n', 'No', 'no')
 MAIN = ('Main', 'main', 'mian','MAin')
@@ -72,8 +71,6 @@ def vote():
             # vote_count(votes)
             continue        # must continue to continue voting process in this argument.
 
-
-
 def main():
     """
     main console menu 
@@ -83,8 +80,8 @@ def main():
     print('Vote for your favorite cartoon character for president; or add your own.')
 
     try:
-        choice = input('Enter number option: 1(show_candidates), 2(vote), 3(new_candidate), 4(vote_count/results), 5(Done)>> ')
-        options[choice]    # TODO: Error: missing 1 required positional argument: 'votes'
+        choice = input('Enter option: 1(show_candidates), 2(vote), 3(new_candidate), 4(vote_count/results), 5(Done)>> ')
+        options[choice]()    #TODO: Error: missing 1 required positional argument: 'votes'
 
     except KeyError:
         print('Try again. Press 5 for "Done"')

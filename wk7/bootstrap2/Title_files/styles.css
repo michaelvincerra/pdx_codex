@@ -1,0 +1,26 @@
+* {
+    font-family: 'Josefin Slab', serif;
+}
+
+/* '*' will apply to ALL elements */
+
+
+body {
+    background-color: grey;
+}
+
+
+p {
+
+    font-family: 'Josefin Slab', serif;
+
+
+}
+
+
+.diabolik {
+
+    font-family: 'Kreon', serif;
+    font-stretch: ultra-expanded;
+
+}

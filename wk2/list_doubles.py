@@ -8,16 +8,19 @@
 
 """
 
+def apply_to_all(data: list, n: int):    #
 
-def apply_to_all(data: int):
+    result = []    # List building pattern to use for iterating over items
 
-    result = list()
-    #counter = 0
+    for item in data:    # TODO: Write a listcomp of this function. [item for item in data if item != 0]
+  
+        product = item * n
 
-    for i in data:
-        result.append(i * 2)
-        print(result)
+        if product != 0:
+            result.append(product)
+
+    return result
 
 
-apply_to_all(0)
 
+apply_to_all([6, 5, 0, 3], 4)  # the first param is a LIST of ints; the second param is an int.

@@ -39,12 +39,12 @@ def smoosh(people):
 
 
 
-
-    result= enumerate(people)
-
-    result2 = [peep for peep in result1]
-
-    return result2
+    #
+    # result= enumerate(people)
+    #
+    # result2 = [peep for peep in result1]
+    #
+    # return result2
 
 
 

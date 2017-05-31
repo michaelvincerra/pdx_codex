@@ -10,7 +10,7 @@ for i in range(0, len(flowers), 1):
 
 
 result = enumerate(smells)
-# You have a list and you want to give each thing a nyumber? use enumerate
+# You have a list and you want to give each thing a number? use enumerate
 # Enumerate: Give each element in a single list a number, key
 
 print(list(result))

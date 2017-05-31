@@ -5,7 +5,7 @@ import re
 # quantify_words('llamas llamas')
 
 BOOKS = '/Users/michaelevan/temp/pdx_code/PythonFullStack/1_Python/3_Applied_Python/labs/ari/books/'
-BOOKS2 = '/Users/michaelevan/temp/pdx_code/PythonFullStack/1_Python/3_Applied_Python/labs/ari/books/licenses/'
+# BOOKS2 = '/Users/michaelevan/temp/pdx_code/PythonFullStack/1_Python/3_Applied_Python/labs/ari/books/licenses/'
 
 def get_data(path):
     """ 

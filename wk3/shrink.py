@@ -14,3 +14,12 @@
 
 # Write your code here.
 
+def shrink(data: str) -> int:
+    result = [int(char) for char in data]
+    total = sum(result)
+
+    print(result)
+
+
+shrink('9')
+

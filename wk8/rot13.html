@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+
+    <script>
+
+        function transform(input) {
+        if (input) {
+            clearError();
+
+
+    var encoded = input.toLower();
+    var alphabet = 'abcdefghijklmnopqrstuvwxyz, ';
+    var cesar13 = 'nopqrstuvwxyzabcdefghijklm';
+
+    var decoded = [];
+
+    for (vari = 0;i<encoded.length;i++) {
+        var enchar = encoded[i];
+        var encloc = cesar13.indexOf(enchar);
+        var decodedChar = alphabet[encloc];
+        decoded.push(decodedChar);
+    }
+
+    var result = decoded.join('');
+
+  document.write(result)
+   printResult(result);
+
+    }
+
+    else {
+      printError('Enter a value');
+      focusInput();
+    }
+  }
+
+document.addEventListener('DOMContentLoaded', function (evt) {
+  // you can rename the `transform` function
+  // above, but if you do, you need to change
+  // the name here, too
+  setup(transform);
+  focusInput();
+});
+
+/* ************************************** */
+/* do not change anything below this line */
+
+function focusInput() {
+  document.querySelector('[name="input"]').focus();
+}
+
+function printResult(str) {
+  document.getElementById('result').innerHTML = str;
+}
+
+function printError(str) {
+  var err = document.getElementById('error');
+  err.classList.add('error');
+  err.innerHTML = str;
+}
+
+function clearError() {
+  var err = document.getElementById('error');
+  err.innerHTML = '';
+  err.classList.remove('error');
+}
+
+function setup(callback) {
+  document.querySelector('form')
+    .addEventListener('submit', function (evt) {
+    evt.preventDefault();
+    var value = document.querySelector('input').value;
+    callback(value);
+  });
+}
+
+
+
+
+
+    </script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>
