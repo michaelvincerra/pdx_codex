@@ -6,7 +6,8 @@ var llamas = 42;
 
 var rabbit_foot = 'fuzzy dice';
 
-if (rabbit_foot === 'fuzzy_dice') {console.log(true)}
+if (rabbit_foot === 'fuzzy_dice')
+    {console.log(true)}
 
 
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+
+
+<body>
+
+
+    <div id="foo">foo</div>
+
+</body>
+
+<script>
+
+    $("#foo").click(function(){
+        $(this).animate({left: '250px'});
+    });
+
+//      first soution below.
+//    $('#foo').click(function(){
+//        alert('Are you there?');
+//        $(this).animate({
+//            opacity: .50,
+//            left: "250px"});
+//    });
+
+
+</script>
+
+
+
+
+
+
+<!--Tag required for jquery-->
+    <!--Move the above to the top while developing the content -->
+    <script src="script.js"></script>
+
+
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+
+
+<!-- ## # Practice: Validator
+
+Save your solution in a directory in `practice/`, in a branch, and make a GitHub pull request all named `validator`.
+Your HTML file should be named `index.html`, your CSS file named `site.css`, and your JS file named `site.js` in that directory.
+
+Create a sign-up form for a user to fill out and submit via a button.
+
+It should ask for the following fields:
+
+* Full Name in `First Last` format
+* Date of birth in `YYYY-MM-DD` format
+* Phone Number in `555-555-5555` format
+
+A field is only valid if it is empty or matches the described format:
+
+*   The full name should be two words separated by a space.
+    Capitalization doesn't matter.
+
+*   The date of birth should be three numbers separated by `-`.
+    The first number should be 4 digits, the second and third 2 digits.
+    Don't worry about checking the day or month range.
+
+*   The phone number should be three numbers separated by `-`.
+    The first and second should be 3 digits, the third 4 digits.
+
+_As the user is typing_, validate each field.
+If the content is currently invalid, the input box should be yellow.
+-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Awesome Page</title>
+            <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+        <style type="text/css">
+
+        /* styles go here */
+
+        </style>
+    </head>
+
+
+
+    <body>
+
+        <!-- restart homework here--USE REGEX for HTML-->
+
+     <br>
+          Enter your first name.
+     <input type="text" name="name" pattern ="[A-Za-z]\s" required> </br>
+         Enter your date of birth.
+     <input type="text" name="name" pattern ="[1-9]{3}[\s\-]?[1-9]{2}[\s\-]?[0-9]{4}" required> </br>
+         Enter your phone number.
+     <input type="text" name="name" pattern ="[1-9]{3}[\s\-]?[1-9]{2}[\s\-]?[0-9]{4}" required> </br>
+
+         <input type="submit">
+     </form>
+
+<!--'Enter your first and last name'-->
+        <!--Enter your date of birth'-->
+<!--'Enter your phone number'-->
+
+
+
+
+
+
+
+</body>
+</html>

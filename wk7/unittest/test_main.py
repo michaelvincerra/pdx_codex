@@ -1,6 +1,7 @@
 import unittest
 import main
 
+
 class MainTest(unittest.TestCase):
     """
     Test string methods. 
@@ -16,6 +17,16 @@ class MainTest(unittest.TestCase):
         self.higher = main.Higher()
         self.middle = main.Middle()
         self.lower = main.Lower()
+
+
+
+
+
+
+
+
+
+
 
     # def test_five_plus_five(self):
     #     assert 5 + 5 == 10

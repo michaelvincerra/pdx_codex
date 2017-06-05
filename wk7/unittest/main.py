@@ -29,17 +29,6 @@ class Reader:
 
 
 
-class Higher(Reader):
-    higher_level = ['genealogy_of_morals.txt']
-    lower_level = ['po.txt']
-
-class Middle(Reader):
-    higher_level = ['iliad.txt']
-    lower_level = ['jack_and_jill.txt']
-
-class Lower(Reader):
-    higher_level = ['odyssey.txt']
-    lower_level = ['the_room_with_the_little_door.txt']
 
 
 def get_data(path):

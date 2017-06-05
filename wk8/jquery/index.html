@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<meta charset="UTF-8">
+<title>Title</title>
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kreon" rel="stylesheet">
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+
+<style>
+
+* {
+    font-family: 'Josefin Slab', serif;
+}
+
+h1{
+  background-color: darkgrey ;
+  color: darkblue;
+  top-margin: 10px;
+  bottom-margin: 10px;
+}
+
+h2{ align-content: center;
+    /*background-color:darkgrey ;*/
+    color: orange;
+    top-margin: 0
+}
+
+p {
+    font-family: 'Josefin Slab', serif;
+}
+.diabolik {
+    font-family: 'Kreon', serif;
+    font-stretch: ultra-expanded;
+</style>
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Nav1</a></li>
+    <li><a href="#">Nav2</li>
+  </ul>
+  </div>
+</nav>
+
+
+<div class="container-fluid text-center ">
+
+
+<div class="page-header row diabolik">
+  <h1>To Do List</h1>
+
+
+
+<section id="reminder">
+
+      <form>
+          <!--<label for="todo"> To Do:</label>-->
+          <input id="todo" type="text" class="form-control">
+            </br>
+            <button id="sub_button" type="submit" class="btn btn-default">
+                Submit
+            </button>
+            <ul id='list'>
+            </ul>
+      </form>
+
+    <h1 id="counter"> 0 <h1>
+
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!--Tag required for jquery-->
+    <!--Move the above to the top while developing the content -->
+    <script src="script.js"></script>
+
+</body>
+</html>
