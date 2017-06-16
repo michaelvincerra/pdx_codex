@@ -3,9 +3,9 @@
   <component name="FacetManager">
     <facet type="django" name="Django">
       <configuration>
-        <option name="rootFolder" value="$MODULE_DIR$/ip_panino" />
-        <option name="settingsModule" value="ip_panino/settings.py" />
-        <option name="manageScript" value="manage.py" />
+        <option name="rootFolder" value="$MODULE_DIR$/data_panino/data_panino" />
+        <option name="settingsModule" value="settings.py" />
+        <option name="manageScript" value="settings.py" />
         <option name="environment" value="&lt;map/&gt;" />
       </configuration>
     </facet>
