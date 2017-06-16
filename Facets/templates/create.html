@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+
+<section>
+
+{% block content%}
+
+    <form action="" method="POST">
+
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>Make Me!</button>
+
+    </form>
+
+
+
+{% endblock%}
+
+</section>

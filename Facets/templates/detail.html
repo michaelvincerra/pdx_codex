@@ -1,0 +1,17 @@
+{% extends "index.html"%}
+
+<section>
+
+{% block content%}
+
+
+    {% if media.type == 'IMG' %}
+        <img src="{{ media.file.url }}">
+    {% endif %}
+
+    {#{{ block.super }}#}
+    {{ media.title }}
+
+{% endblock%}
+
+</section>

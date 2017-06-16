@@ -57,9 +57,11 @@ h2 {
     position: relative;
     max-width: 100%;
 }
+
 .framebox {
     display: flex;
     flex-direction: row;
+    /*border: 2px solid red;*/
 }
 
 .picturebox {
