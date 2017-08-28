@@ -67,6 +67,7 @@ def quantify_words(phrase):
     split_ups = cleaned.split()
 
     word_count = dict()             # Build an empty dict.
+
     for word in split_ups:          # For loop var in split_ups, loop:
         if word in word_count:      # If loop var occurs ...
             word_count[word] += 1
